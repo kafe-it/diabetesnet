@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Launch Program",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/main.py",
+      "console": "integratedTerminal",
+      "args": [
+        "-i",
+        "data/diabetes.csv",
+        "-o",
+        "models",
+        "--batch-size",
+        "16",
+        "--input-size",
+        "7",
+        "--hidden-size",
+        "207",
+        "--num-classes",
+        "1",
+        "--dropout",
+        "0.245",
+        "--epochs",
+        "1000",
+        "--learning-rate",
+        "0.0072",
+        "--weight-decay",
+        "0.00028"
+        //"--hyperparam-tuning"
+      ]
+    }
+  ]
+}
